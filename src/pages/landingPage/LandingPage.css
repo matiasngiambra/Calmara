@@ -1,0 +1,34 @@
+.container{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title{
+    font-family: 'Sacramento', cursive;
+    line-height: 0.8 !important;
+    font-size: 252px;
+    color: #75CCFF;
+    z-index: 3;
+}
+
+.subtitle{
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    color: #042B4D;
+    z-index: 4;
+}

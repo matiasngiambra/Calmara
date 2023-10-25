@@ -1,0 +1,14 @@
+.navbar{
+    background-color: #EFF8FF !important;
+    z-index: 1  !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    transition: top 0.3s;
+    
+}
+
+.nav-link{
+    font-size: 25px;
+}

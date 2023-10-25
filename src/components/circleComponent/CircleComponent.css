@@ -1,14 +1,20 @@
 .circle {
-    animation: burbujaAnimacion 4s infinite alternate;
-    z-index: 2;
+  background-color: #B6E2FF;
+  border-radius: 50%;
+  position: fixed;
+  animation: burbujaAnimacion 4s infinite alternate;
+  z-index: 2;
 }
 
 
 @keyframes burbujaAnimacion {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.2);
-    }
+  0% {
+    transform: scale(1);
   }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+

@@ -4,7 +4,7 @@ import '../circleComponent/circleComponent.css';
 const CircleComponent = (props) => {
   
   return (
-    <div className="circle fixed rounded-full bg-main-300 " style={props.style}></div>
+    <div className="circle" style={props.style}></div>
   );
 }
 
