@@ -11,7 +11,7 @@ const Interactive = () => {
         </button>
       </a>
 
-      <a href='/exercices/breath'>
+      <a href='/exercices/whitenoise'>
         <button>
           White Noise
         </button>

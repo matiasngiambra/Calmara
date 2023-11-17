@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Interactive from './pages/Interactive/Interactive.jsx';
 import Breath from './pages/exercices/breath/Breath.jsx';
+import WhiteNoise from './pages/exercices/whitenoise/WhiteNoise.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,12 +16,12 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/interactive",
-    element: <Interactive></Interactive>,
-  },
-  {
     path: "/exercices/breath",
     element: <Breath></Breath>,
+  },
+  {
+    path: "/exercices/whitenoise",
+    element: <WhiteNoise></WhiteNoise>,
   },
 ]);
 
