@@ -16,6 +16,9 @@ const Interactive = () => {
         <Button variant="info">Sonidos ambiente</Button>
       </a>
 
+      <a href='/exercices/phraseoftheday'>
+        <Button variant="info">Frase del día</Button>
+      </a>
 
     </div>
   )
