@@ -1,5 +1,6 @@
 import React from 'react'
-import svg from '../../../../assets/svg/mock.svg';
+import meditation1 from '../../../../assets/svg/meditation1.svg';
+import meditation2 from '../../../../assets/svg/meditation2.svg';
 import LandingSectionRight from '../landing-section/LandingSectionRight';
 import LandingSectionLeft from '../landing-section/LandingSectionLeft';
 
@@ -9,10 +10,10 @@ const Information = () => {
     <div className='section' id='informationsection'  >
       <h1>Información</h1>
       <LandingSectionRight 
-      svg={svg} 
+      svg={meditation1} 
       text={"Texto Dummy"}/>
      <LandingSectionLeft
-      svg={svg} 
+      svg={meditation2} 
       text={"Texto Dummy"}/>
     </div>
   )
