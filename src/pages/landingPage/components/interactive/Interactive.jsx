@@ -1,20 +1,19 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 
 const Interactive = () => {
   return (
     <div className='section' id='interactivesection'>
-      <h1>Interactive</h1>
+      <h1>Interactivo</h1>
 
       <a href='/exercices/breath'>
-        <button>
-          Breath
-        </button>
+        <Button variant="info">
+          Respiración Guiada
+        </Button>
       </a>
 
       <a href='/exercices/whitenoise'>
-        <button>
-          White Noise
-        </button>
+        <Button variant="info">Sonidos ambiente</Button>
       </a>
 
 

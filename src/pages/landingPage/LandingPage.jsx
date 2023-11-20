@@ -1,11 +1,11 @@
 import React from 'react'
 import CircleLayout from '../../layout/components/CircleLayout'
-import Home from '../home/Home'
-import Information from '../information/Information'
-import Interactive from '../Interactive/Interactive'
+import Home from './components/home/Home'
 import Nav from '../../layout/components/nav/Nav'
-import { Container } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import '../landingPage/LandingPage.css'
+import Information from './components/information/Information'
+import Interactive from './components/interactive/Interactive'
 
 
 
@@ -13,14 +13,20 @@ const LandingPage = () => {
 
 
 
-  return (    
+  return (
     <>
-      <Nav></Nav>
-      <CircleLayout></CircleLayout> 
-      <Container className='container' >
-        <Home></Home>
-        <Information ></Information>
-        <Interactive></Interactive>
+      <Nav />
+      <CircleLayout />
+      <Container>
+        <Row>
+          <Home />
+        </Row>
+        <Row>
+          <Information />
+        </Row>
+        <Row>
+          <Interactive />
+        </Row>
       </Container>
     </>
   )

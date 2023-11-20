@@ -30,7 +30,7 @@ const Nav = ( ) => {
                             <a className="nav-link" href="#" onClick={()=> handleScroll('informationsection')}>Info</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#" onClick={()=> handleScroll('interactivesection')} >Interactive</a>
+                            <a className="nav-link" href="#" onClick={()=> handleScroll('interactivesection')} >Interactivo</a>
                         </li>
                     </ul>
                 </div>
