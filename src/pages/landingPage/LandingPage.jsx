@@ -7,11 +7,7 @@ import '../landingPage/LandingPage.css'
 import Information from './components/information/Information'
 import Interactive from './components/interactive/Interactive'
 
-
-
 const LandingPage = () => {
-
-
 
   return (
     <>

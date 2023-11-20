@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 const Breath = () => {
   const [isMeditating, setIsMeditating] = useState(false);
@@ -60,25 +61,34 @@ const Breath = () => {
   };
 
   return (
-    <div>
-      <button onClick={startMeditation}>Start</button>
-      <button onClick={stopMeditation}>Stop</button>
+    <Container className="my-4">
+      <Row className="justify-content-center">
+        <Col xs={12} md={6} className="text-center">
+          <Button onClick={startMeditation} variant="primary" className="m-2">
+            Start
+          </Button>
+          <Button onClick={stopMeditation} variant="danger" className="m-2">
+            Stop
+          </Button>
 
-      <div>
-        <p>Repetition {repetition}/2</p>
-        <p>{inhale ? 'Inhale' : 'Exhale'}</p>
-        <div
-          style={{
-            width: `${calculateBubbleSize()}px`,
-            height: `${calculateBubbleSize()}px`,
-            borderRadius: '50%',
-            backgroundColor: 'lightblue',
-            transition: 'all 0.5s ease-out',
-          }}
-        />
-        <p>{seconds} seconds</p>
-      </div>
-    </div>
+          <div>
+            <p>Repetition {repetition}/2</p>
+            <p>{inhale ? 'Inhale' : 'Exhale'}</p>
+            <div
+              style={{
+                width: `${calculateBubbleSize()}px`,
+                height: `${calculateBubbleSize()}px`,
+                borderRadius: '50%',
+                backgroundColor: '#3498db', // Azul primario de la paleta de colores
+                transition: 'all 0.5s ease-out',
+                margin: '20px auto',
+              }}
+            />
+            <p>{seconds} seconds</p>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
