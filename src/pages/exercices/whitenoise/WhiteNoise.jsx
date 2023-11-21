@@ -5,15 +5,15 @@ import CircleLayout from '../../../layout/components/CircleLayout'
 import SoundBoxComponent from '../../../components/soundbox/SoundBoxComponent'
 import './whitenoise.css'
 import { useState } from 'react'
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const WhiteNoise = () => {
 
     let navigate = useNavigate();
-    
+
     document.title = "White Noise - Cálmara"
-    
+
     const audioRefs = [
         { ref: useRef(null), name: 'RainFallMedium.mp3', originalName: 'Rain' },
         { ref: useRef(null), name: 'Calm-waves.mp3', originalName: 'Ocean' },
@@ -21,13 +21,13 @@ const WhiteNoise = () => {
         { ref: useRef(null), name: 'Evening-birds-singing.mp3', originalName: 'Birds' },
         { ref: useRef(null), name: 'Forest-ambience.mp3', originalName: 'Forest' },
     ];
-    
+
     const [isPlaying, setIsPlaying] = useState(Array(audioRefs.length).fill(false));
-    
+
     const handleDivClick = (index) => {
         const newIsPlaying = Array(audioRefs.length).fill(false);
         newIsPlaying[index] = !isPlaying[index];
-        
+
         audioRefs.forEach(({ ref, name }, i) => {
             if (newIsPlaying[i]) {
                 ref.current.play();
@@ -36,16 +36,23 @@ const WhiteNoise = () => {
                 ref.current.currentTime = 0;
             }
         });
-        
+
         setIsPlaying(newIsPlaying);
     };
+
+    /*
     
+    <button onClick={() => navigate("/")}>Back</button>
+   
+   */
+
 
     return (
         <>
             <Nav></Nav>
             <CircleLayout></CircleLayout>
-            <button onClick={() => navigate("/")}>Back</button> 
+
+
 
             <Container className='container' >
                 <h1 className='title'>White Noise</h1>

@@ -6,6 +6,7 @@ import { Container, Row } from 'react-bootstrap'
 import '../landingPage/LandingPage.css'
 import Information from './components/information/Information'
 import Interactive from './components/interactive/Interactive'
+import FooterComponent from '../../layout/components/footer/FooterComponent'
 
 const LandingPage = () => {
 
@@ -24,6 +25,7 @@ const LandingPage = () => {
           <Interactive />
         </Row>
       </Container>
+      <FooterComponent></FooterComponent>
     </>
   )
 }

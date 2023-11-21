@@ -1,42 +1,43 @@
 import React from 'react'
 import '../nav/Nav.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useNavigate} from "react-router-dom";
 
-const Nav = ( ) => {
 
-    const handleScroll = ( destino ) => {
+const Navclass = () => {
+    let navigate = useNavigate();
+    const handleScroll = (destino) => {
         const seccionDestino = document.getElementById(destino);
         const destinoOffset = seccionDestino.offsetTop;
-    
+
         window.scrollTo({
-          top: destinoOffset,
-          behavior: 'smooth'
+            top: destinoOffset,
+            behavior: 'smooth'
         });
-      }
+    }
 
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#"> <img style={{ height: '30px' }} src="../src/assets/images/Calmara-logo.png" alt="" /> </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#" onClick={()=> handleScroll('informationsection')}>Info</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#" onClick={()=> handleScroll('interactivesection')} >Interactivo</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <>
+            <Navbar collapseOnSelect expand="lg" className="navbar bg-body-tertiary">
+                
+                <a className="navbar-brand" href="#" onClick={() => navigate("/")}> <img style={{ marginLeft: '30px', height: '30px' }} src="../src/assets/images/Calmara-logo.png" alt="" /> </a>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="#" onClick={() => handleScroll('informationsection')}>Info</Nav.Link>
+                            <Nav.Link href="#" onClick={() => handleScroll('interactivesection')} >Interactivo</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                
+            </Navbar>
+
+        </>
+
     )
 }
 
-export default Nav
+export default Navclass

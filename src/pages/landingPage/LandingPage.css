@@ -1,13 +1,6 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-
-}
 
 .section{
-    height: 90vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +11,7 @@
 .title-main{
     font-family: 'Sacramento', cursive;
     line-height: 0.8 !important;
-    font-size: 10vw;
+    font-size: 15vw;
     color: #75CCFF;
     z-index: 3;
 }
