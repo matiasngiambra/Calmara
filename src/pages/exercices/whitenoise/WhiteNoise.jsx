@@ -5,13 +5,22 @@ import CircleLayout from '../../../layout/components/CircleLayout'
 import SoundBoxComponent from '../../../components/soundbox/SoundBoxComponent'
 import './whitenoise.css'
 import { useState } from 'react'
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
+=======
+import BackButton from '../../../components/backbutton/BackButton.jsx'
+>>>>>>> a87c90150d203cd8cd1dac7b9f31dd96e7b2565b
 
 
 const WhiteNoise = () => {
 
+<<<<<<< HEAD
     let navigate = useNavigate();
 
+=======
+
+    
+>>>>>>> a87c90150d203cd8cd1dac7b9f31dd96e7b2565b
     document.title = "White Noise - Cálmara"
 
     const audioRefs = [
@@ -50,9 +59,13 @@ const WhiteNoise = () => {
     return (
         <>
             <Nav></Nav>
+            <BackButton></BackButton>
             <CircleLayout></CircleLayout>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a87c90150d203cd8cd1dac7b9f31dd96e7b2565b
 
             <Container className='container' >
                 <h1 className='title'>White Noise</h1>

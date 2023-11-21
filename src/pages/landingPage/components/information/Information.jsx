@@ -1,5 +1,6 @@
 import React from 'react'
-import svg from '../../../../assets/svg/mock.svg';
+import meditation1 from '../../../../assets/svg/meditation1.svg';
+import meditation2 from '../../../../assets/svg/meditation2.svg';
 import LandingSectionRight from '../landing-section/LandingSectionRight';
 import LandingSectionLeft from '../landing-section/LandingSectionLeft';
 
@@ -8,6 +9,7 @@ const Information = () => {
   return (
     <div className='section' id='informationsection'  >
       <h1>Información</h1>
+<<<<<<< HEAD
       <LandingSectionRight
         svg={svg}
         text={
@@ -41,6 +43,14 @@ const Information = () => {
         `
         }
       />
+=======
+      <LandingSectionRight 
+      svg={meditation1} 
+      text={"Texto Dummy"}/>
+     <LandingSectionLeft
+      svg={meditation2} 
+      text={"Texto Dummy"}/>
+>>>>>>> a87c90150d203cd8cd1dac7b9f31dd96e7b2565b
     </div>
   )
 }

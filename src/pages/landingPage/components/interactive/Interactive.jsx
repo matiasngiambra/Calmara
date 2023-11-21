@@ -20,6 +20,9 @@ const Interactive = () => {
         </a>
       </div>
 
+      <a href='/exercices/phraseoftheday'>
+        <Button variant="info">Frase del día</Button>
+      </a>
 
     </div>
   )

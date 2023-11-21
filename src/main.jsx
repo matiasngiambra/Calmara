@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Breath from './pages/exercices/breath/Breath.jsx';
 import WhiteNoise from './pages/exercices/whitenoise/WhiteNoise.jsx';
+import { PhraseOfTheDay } from './pages/exercices/phraseoftheday/PhraseOfTheDay.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,11 +16,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/exercices/breath",
-    element: <Breath></Breath>,
+    element: <Breath/>,
   },
   {
     path: "/exercices/whitenoise",
-    element: <WhiteNoise></WhiteNoise>,
+    element: <WhiteNoise/>,
+  },
+  {
+    path: "/exercices/phraseoftheday",
+    element: <PhraseOfTheDay/>,
   },
 ]);
 
