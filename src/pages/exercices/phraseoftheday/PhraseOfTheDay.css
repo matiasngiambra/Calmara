@@ -1,0 +1,18 @@
+
+.phrase-button-container{
+    font-family: 'Montserrat', cursive;
+    font-size: 20px;
+    color: #75CCFF;
+    margin:40px;
+}
+
+.phrase-text{
+    font-family: 'Montserrat', cursive;
+    font-size: 60px;
+    color: #75CCFF;
+}
+
+.phrase-autor{
+    font-family: 'Montserrat', cursive;
+    font-size: 30px;
+}
