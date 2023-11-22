@@ -1,26 +1,114 @@
-.container-icons{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
+@media (max-width: 400px) {
+    .whitenoisecontainer {
+        margin-top: 70px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .container-icons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .title {
+        font-family: 'Sacramento', cursive;
+        line-height: 0.8 !important;
+        font-size: 75px;
+        color: #75CCFF;
+        z-index: 3;
+    }
+
+
+    .subtitle {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        color: #042B4D;
+        z-index: 4;
+    }
 }
 
-.title{
-    font-family: 'Sacramento', cursive;
-    line-height: 0.8 !important;
-    font-size: 140px;
-    color: #75CCFF;
-    z-index: 3;
+@media (min-width: 400px) and (max-width: 1000px) {
+    .whitenoisecontainer {
+        height: 100%;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container-icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .title {
+        font-family: 'Sacramento', cursive;
+        font-size: 90px;
+        color: #75CCFF;
+        z-index: 3;
+    }
+
+
+
+    .subtitle {
+        font-family: 'Montserrat', sans-serif;
+        width: 80%;
+        text-align: center;
+        font-size: 25px;
+        color: #042B4D;
+        z-index: 4;
+    }
 }
 
+@media (min-width: 1000px) {
+    .whitenoisecontainer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-.subtitle{
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-    color: #042B4D;
-    z-index: 4;
+    }
+
+    .container-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .title {
+        font-family: 'Sacramento', cursive;
+        line-height: 0.8 !important;
+        font-size: 140px;
+        color: #75CCFF;
+        z-index: 3;
+    }
+
+    .subtitle {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        color: #042B4D;
+        z-index: 4;
+    }
 }
