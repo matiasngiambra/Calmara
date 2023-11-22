@@ -1,0 +1,39 @@
+.repetition-title{
+    font-family: 'Montserrat', cursive;
+    line-height: 0.8 !important;
+    font-size: 20px;
+    color: #75CCFF;
+    z-index: 3;
+    margin:20px;
+}
+
+.repetition-number{
+    font-family: 'Montserrat', cursive;
+    font-size: 20px;
+    color: #75CCFF;
+    z-index: 3;
+}
+
+.container-breath{
+    margin-top: 30px;
+}
+
+.breath-title{
+    margin: 20px;
+    font-family: 'Montserrat', cursive;
+    font-size: 30px;
+    color: #3498db;
+    z-index: 3;
+}
+
+.breath-subtitle{
+    margin: 20px;
+    font-family: 'Montserrat', cursive;
+    font-size: 25px;
+    color: #3498db;
+    z-index: 3;
+}
+
+.breath-container{
+    margin-top: 40px;
+}
