@@ -1,13 +1,7 @@
 .blue-background {
-<<<<<<< HEAD
     background-color:#61a9da;
     color: white; 
     padding: 20px; 
-=======
-    background-color: #DEF0FF;
-    color: black; /* Para asegurar que el texto sea legible */
-    padding: 20px; /* Añade padding para dar espacio al contenido */
->>>>>>> a87c90150d203cd8cd1dac7b9f31dd96e7b2565b
     border-radius: 8px; /* Bordes redondeados */
     font-size: 3vh;
   }
