@@ -11,7 +11,10 @@ const FooterComponent = () => {
                         <p>
                             Copyright &copy; 2023 Cálmara. Todos los derechos reservados.
                             <br />
-                            <small>"La vida es una aventura, atrévete." - Teresa de Calcuta</small>
+                            <small>
+                                Alumnos: <a href='https://www.linkedin.com/in/matias-giambra/'>Giambra Matias</a>,
+                                <a href='https://www.linkedin.com/in/nahuel-palacios-salguero/'> Palacios Nahuel</a>
+                            </small>
                         </p>
                     </Col>
                     <Col sm={6}>
@@ -26,7 +29,6 @@ const FooterComponent = () => {
                                 <a className='footer-link' href="#">Contacto</a>
                             </li>
                         </ul>
-                        <Button variant="primary">Suscríbete a nuestro boletín</Button>
                     </Col>
                 </Row>
             </Container>
