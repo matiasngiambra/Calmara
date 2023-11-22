@@ -11,7 +11,16 @@
 .title-main{
     font-family: 'Sacramento', cursive;
     line-height: 0.8 !important;
-    font-size: 15vw;
+    font-size: 8vw;
+    color: #75CCFF;
+    z-index: 3;
+}
+
+.title-secundary{
+    margin: 20px;
+    font-family: 'Sacramento', cursive;
+    line-height: 0.8 !important;
+    font-size: 3vw;
     color: #75CCFF;
     z-index: 3;
 }

@@ -6,6 +6,7 @@ import SoundBoxComponent from '../../../components/soundbox/SoundBoxComponent'
 import './whitenoise.css'
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import FooterComponent from '../../../layout/components/footer/FooterComponent'
 
 
 const WhiteNoise = () => {
@@ -49,11 +50,8 @@ const WhiteNoise = () => {
 
     return (
         <>
-            <Nav></Nav>
-            <CircleLayout></CircleLayout>
-
-
-
+            <Nav isSecondary={true} />
+            <CircleLayout />
             <Container className='container' >
                 <h1 className='title'>White Noise</h1>
                 <h5 className='subtitle'>
@@ -77,6 +75,7 @@ const WhiteNoise = () => {
                     ))}
                 </div>
             </Container>
+            <FooterComponent></FooterComponent>
         </>
     )
 }

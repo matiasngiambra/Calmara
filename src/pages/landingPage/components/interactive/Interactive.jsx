@@ -5,25 +5,24 @@ import '../interactive/Interactive.css'
 const Interactive = () => {
   return (
     <div className='section' id='interactivesection'>
-      <h1>Interactivo</h1>
-
+      <div className='title-secundary'>Interactivo</div>
       <div className='container-interactive'>
-
         <a href='/exercices/breath'>
           <Button className='button-interactive' variant="info">
             Respiración Guiada
           </Button>
         </a>
-
         <a href='/exercices/whitenoise'>
-          <Button className='button-interactive' variant="info">Sonidos ambiente</Button>
+          <Button className='button-interactive' variant="info">
+            Sonidos ambiente
+          </Button>
+        </a>
+        <a href='/exercices/phraseoftheday'>
+          <Button className='button-interactive' variant="info">
+            Frase del día
+          </Button>
         </a>
       </div>
-
-      <a href='/exercices/phraseoftheday'>
-        <Button variant="info">Frase del día</Button>
-      </a>
-
     </div>
   )
 }

@@ -2,7 +2,8 @@
     background-color:#61a9da;
     color: white; 
     padding: 20px; 
-    border-radius: 8px; /* Bordes redondeados */
-    font-size: 3vh;
+    border-color:#61a9da;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 2vh;
   }
   

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import getRandomQuote from '../../../services/getRandomQuote';
 import CircleLayout from '../../../layout/components/CircleLayout';
 import { Col, Container, Row } from 'react-bootstrap';
+import FooterComponent from '../../../layout/components/footer/FooterComponent';
+import Navclass from '../../../layout/components/nav/Nav';
 
 export const PhraseOfTheDay = () => {
   const [loading, setLoading] = useState(true);
@@ -29,7 +31,7 @@ export const PhraseOfTheDay = () => {
   return (
     <div>
       <CircleLayout />
-
+      <Navclass isSecondary={true}></Navclass>
       <Container className="vh-100 d-flex justify-content-center align-items-center">
         <Row>
           <Col>
@@ -42,6 +44,9 @@ export const PhraseOfTheDay = () => {
           </Col>
         </Row>
       </Container>
+
+      <FooterComponent/>
+
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Information = () => {
 
   return (
     <div className='section' id='informationsection'  >
-      <h1>Información</h1>
+      <div className='title-secundary'>Información</div>
       <LandingSectionRight
         svg={meditation1}
         text={
