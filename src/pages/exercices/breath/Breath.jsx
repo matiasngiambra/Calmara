@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Container, Row, Col } from 'react-bootstrap';
+import '../breath/Breath.css'
+import CircleLayout from '../../../layout/components/CircleLayout';
+import FooterComponent from '../../../layout/components/footer/FooterComponent';
+import Navclass from '../../../layout/components/nav/Nav';
 
 const Breath = () => {
   const [isMeditating, setIsMeditating] = useState(false);
@@ -7,8 +11,8 @@ const Breath = () => {
   const [inhale, setInhale] = useState(true);
   const [repetition, setRepetition] = useState(0);
 
-  const bubbleSize = 40; // Tamaño inicial de la burbuja
-  const maxBubbleSize = 80; // Tamaño máximo de la burbuja
+  const bubbleSize = 125; // Tamaño inicial de la burbuja
+  const maxBubbleSize = 250; // Tamaño máximo de la burbuja
   const breathDuration = 5; // Duración de la inhalación y exhalación en segundos
 
   useEffect(() => {
@@ -25,8 +29,8 @@ const Breath = () => {
           if (!inhale) {
             setRepetition((prevRepetition) => prevRepetition + 1);
 
-            if (repetition === 2) {
-              // Finalizar la meditación después de 2 repeticiones
+            if (repetition === 3) {
+              // Finalizar la meditación después de 3 repeticiones
               stopMeditation();
             }
           }
@@ -61,34 +65,39 @@ const Breath = () => {
   };
 
   return (
-    <Container className="my-4">
-      <Row className="justify-content-center">
-        <Col xs={12} md={6} className="text-center">
-          <Button onClick={startMeditation} variant="primary" className="m-2">
-            Start
-          </Button>
-          <Button onClick={stopMeditation} variant="danger" className="m-2">
-            Stop
-          </Button>
-
-          <div>
-            <p>Repetition {repetition}/2</p>
-            <p>{inhale ? 'Inhale' : 'Exhale'}</p>
-            <div
-              style={{
-                width: `${calculateBubbleSize()}px`,
-                height: `${calculateBubbleSize()}px`,
-                borderRadius: '50%',
-                backgroundColor: '#3498db', // Azul primario de la paleta de colores
-                transition: 'all 0.5s ease-out',
-                margin: '20px auto',
-              }}
-            />
-            <p>{seconds} seconds</p>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <CircleLayout />
+      <Navclass isSecondary={true} />
+      <Container className="vh-100 container-breath">
+        <Row className="justify-content-center">
+          <Col xs={12} md={6} className="text-center">
+            <Button onClick={startMeditation} variant="primary" className="m-2">
+              Empezar
+            </Button>
+            <Button onClick={stopMeditation} variant="danger" className="m-2">
+              Parar
+            </Button>
+            <br />
+            <div className='breath-container'>
+              <p className='repetition-title'>Repeticion <span className='repetition-number'>{repetition}/3</span></p>
+              <p className='breath-title'>{inhale ? 'Inhalar' : 'Exhalar'}</p>
+              <div
+                style={{
+                  width: `${calculateBubbleSize()}px`,
+                  height: `${calculateBubbleSize()}px`,
+                  borderRadius: '50%',
+                  backgroundColor: '#3498db', // Azul primario de la paleta de colores
+                  transition: 'all 0.5s ease-out',
+                  margin: '30px auto',
+                }}
+              />
+              <p className='breath-subtitle'>{seconds}</p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <FooterComponent />
+    </>
   );
 };
 

@@ -30,7 +30,7 @@ export const PhraseOfTheDay = () => {
   return (
     <div>
       <CircleLayout />
-      <Navclass isSecondary={true}></Navclass>
+      <Navclass isSecondary={true} />
       <Container className="vh-100 d-flex justify-content-center align-items-center">
         <Row>
           <Col>
@@ -43,7 +43,6 @@ export const PhraseOfTheDay = () => {
           </Col>
         </Row>
       </Container>
-
       <FooterComponent/>
 
     </div>
