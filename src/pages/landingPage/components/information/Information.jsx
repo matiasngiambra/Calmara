@@ -1,6 +1,7 @@
 import React from 'react'
 import meditation1 from '../../../../assets/svg/meditation1.svg';
 import meditation2 from '../../../../assets/svg/meditation2.svg';
+import nature1 from '../../../../assets/svg/nature1.svg';
 import LandingSectionRight from '../landing-section/LandingSectionRight';
 import LandingSectionLeft from '../landing-section/LandingSectionLeft';
 
@@ -10,7 +11,7 @@ const Information = () => {
     <div className='informationsection' id='informationsection' >
       <div className='title-secundary'>Información</div>
       <LandingSectionRight
-        svg={meditation1}
+        svg={nature1}
         text={
         `
         El estrés y la ansiedad son fenómenos comunes en la vida moderna, afectando la salud física y mental. 
@@ -33,7 +34,7 @@ const Information = () => {
       />
 
       <LandingSectionRight
-        svg={meditation1}
+        svg={meditation2}
         text={
         `
         La lectura de frases motivadoras también puede contrarrestar la ansiedad al cambiar el enfoque mental y fomentar pensamientos positivos, 
