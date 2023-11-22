@@ -15,15 +15,15 @@ const LandingPage = () => {
       <Nav />
       <CircleLayout />
       <Container>
-        <Row>
+        <row className='rowhome'>
           <Home />
-        </Row>
-        <Row>
+        </row>
+        <row className='rowinformation'>
           <Information />
-        </Row>
-        <Row>
-          <Interactive />
-        </Row>
+        </row>
+        <row className='rowinteractive'>
+        <Interactive />
+        </row>
       </Container>
       <FooterComponent></FooterComponent>
     </>

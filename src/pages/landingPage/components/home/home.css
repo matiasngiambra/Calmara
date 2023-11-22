@@ -1,0 +1,61 @@
+@media (max-width: 400px) {
+    .title-main{
+        font-family: 'Sacramento', cursive;
+        line-height: 0.8 !important;
+        font-size: 100px;
+        text-align: center;
+        color: #75CCFF;
+        
+    }
+    
+    .home-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+  }
+  
+  @media (min-width: 400px) and (max-width: 1000px) {
+    .title-main{
+        font-family: 'Sacramento', cursive;
+        line-height: 0.8 !important;
+        font-size: 155px;
+        text-align: center;
+        color: #75CCFF;
+        
+    }
+    
+    .home-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  }
+  
+  @media (min-width: 1000px) {
+    .title-main{
+        font-family: 'Sacramento', cursive;
+        line-height: 0.8 !important;
+        font-size: 275px;
+        text-align: center;
+        color: #75CCFF;
+        
+    }
+    
+    .home-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+  }
+
+
+

@@ -1,6 +1,5 @@
-
-.section{
-    height: 140vh;
+.section {
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,15 +7,32 @@
 
 }
 
-.title-main{
-    font-family: 'Sacramento', cursive;
-    line-height: 0.8 !important;
-    font-size: 8vw;
-    color: #75CCFF;
-    z-index: 3;
+.rowhome {
+
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.title-secundary{
+.rowinformation {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rowinteractive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title-secundary {
     margin: 20px;
     font-family: 'Sacramento', cursive;
     line-height: 0.8 !important;
@@ -25,11 +41,18 @@
     z-index: 3;
 }
 
-.subtitle{
+.subtitle {
     font-family: 'Montserrat', sans-serif;
     width: 80%;
     text-align: center;
     font-size: 30px;
     color: #042B4D;
     z-index: 4;
+}
+
+.informationsection {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

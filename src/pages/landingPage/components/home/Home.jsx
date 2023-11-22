@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import getRandomQuote from '../../../../services/getRandomQuote';
+import '../home/home.css'
 
 const Home = () => {
 
 
   return (
-    <Container className='section'>
-      <Row className='justify-content-center align-items-center'>
-        <Col xs={12} md={8}>
+    <Container className='home-container'>
+      <Row>
+        <Col>
           <h1 className='title-main'>Cálmara</h1>
               <h4 className='subtitle'>
                 Vivimos en un mundo lleno de ansiedad y estrés.

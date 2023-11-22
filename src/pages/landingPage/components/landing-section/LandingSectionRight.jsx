@@ -9,7 +9,7 @@ const LandingSectionRight = ({svg, text}) => {
       <Row className="my-4 align-items-center">
         {/* Texto */}
         <Col xs={12} md={6}>
-          <Card className="p-3 blue-background">
+          <Card className="blue-background">
               {text}
           </Card>
         </Col>

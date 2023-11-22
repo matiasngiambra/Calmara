@@ -7,7 +7,7 @@ import LandingSectionLeft from '../landing-section/LandingSectionLeft';
 const Information = () => {
 
   return (
-    <div className='section' id='informationsection'  >
+    <div className='informationsection' id='informationsection' >
       <div className='title-secundary'>Información</div>
       <LandingSectionRight
         svg={meditation1}

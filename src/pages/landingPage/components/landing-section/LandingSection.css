@@ -1,9 +1,10 @@
 .blue-background {
     background-color:#61a9da;
     color: white; 
-    padding: 20px; 
+    padding: 30px; 
+    font-family: 'Montserrat', sans-serif;
     border-color:#61a9da;
     border-radius: 10px; /* Bordes redondeados */
-    font-size: 2vh;
+    font-size: 20px;
   }
   
