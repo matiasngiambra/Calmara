@@ -16,7 +16,7 @@ const LandingSectionLeft = ({ svg, text }) => {
         </Col>
         {/* Texto */}
         <Col xs={12} md={6}>
-          <Card className="p-3 blue-background">
+          <Card className="blue-background">
             {text}
           </Card>
         </Col>
