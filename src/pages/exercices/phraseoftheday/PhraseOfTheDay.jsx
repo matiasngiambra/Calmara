@@ -10,21 +10,20 @@ export const PhraseOfTheDay = () => {
   const [phraseText, setPhraseText] = useState('');
   const [phraseAuthor, setPhraseAuthor] = useState('');
 
+  const fetchQuote = async () => {
+    try {
+      setLoading(true);
+      const randomQuote = await getRandomQuote();
+      const [text, author] = randomQuote.frase.split(' - '); // Dividir la frase en texto y autor
+      setPhraseText(text);
+      setPhraseAuthor(author);
+    } catch (error) {
+      console.error('Error fetching quote:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
   useEffect(() => {
-    const fetchQuote = async () => {
-      try {
-        setLoading(true);
-        const randomQuote = await getRandomQuote();
-        const [text, author] = randomQuote.frase.split(' - '); // Dividir la frase en texto y autor
-        setPhraseText(text);
-        setPhraseAuthor(author);
-      } catch (error) {
-        console.error('Error fetching quote:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchQuote();
   }, []);
 
@@ -35,12 +34,12 @@ export const PhraseOfTheDay = () => {
       <Container className="vh-100 d-flex justify-content-center align-items-center">
         <Row>
           <Col>
-            {!loading && (
+            {!loading ? (
               <>
                 <h1 className="text-center">{phraseText}</h1>
                 <p className="text-center text-muted">{phraseAuthor}</p>
               </>
-            )}
+            ) : <div>Cargando</div>}
           </Col>
         </Row>
       </Container>

@@ -1,17 +1,13 @@
-import React, { useRef } from 'react'
+import React, { useRef,useState } from 'react'
+import './whitenoise.css'
 import { Container } from 'react-bootstrap'
 import Nav from '../../../layout/components/nav/Nav'
 import CircleLayout from '../../../layout/components/CircleLayout'
 import SoundBoxComponent from '../../../components/soundbox/SoundBoxComponent'
-import './whitenoise.css'
-import { useState } from 'react'
-import { useNavigate } from "react-router-dom";
 import FooterComponent from '../../../layout/components/footer/FooterComponent'
 
 
 const WhiteNoise = () => {
-
-    let navigate = useNavigate();
 
     document.title = "White Noise - Cálmara"
 
@@ -28,7 +24,6 @@ const WhiteNoise = () => {
     const handleDivClick = (index) => {
         const newIsPlaying = Array(audioRefs.length).fill(false);
         newIsPlaying[index] = !isPlaying[index];
-
         audioRefs.forEach(({ ref, name }, i) => {
             if (newIsPlaying[i]) {
                 ref.current.play();
@@ -37,22 +32,15 @@ const WhiteNoise = () => {
                 ref.current.currentTime = 0;
             }
         });
-
         setIsPlaying(newIsPlaying);
     };
-
-    /*
-    
-    <button onClick={() => navigate("/")}>Back</button>
-   
-   */
 
 
     return (
         <>
             <Nav isSecondary={true} />
             <CircleLayout />
-            <Container className='container' >
+            <Container className="vh-100 justify-content-center align-items-center">
                 <h1 className='title'>White Noise</h1>
                 <h5 className='subtitle'>
                     ¿Estás buscando un espacio de calma y relajación? Has llegado al lugar indicado.
