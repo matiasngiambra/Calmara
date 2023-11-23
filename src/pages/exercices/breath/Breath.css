@@ -17,7 +17,6 @@
     }
     
     .button {
-        background-color: #6fc985;
         border-color: white;
         margin: 10px;
         font-size: 30px;
@@ -31,7 +30,7 @@
     }
     
     .button-stop {
-        background-color: #f56f42;
+        background-color: #eb5d5d;
     }
     
     .repetition-title {
@@ -96,7 +95,6 @@
     }
     
     .button {
-        background-color: #6fc985;
         border-color: white;
         margin: 10px;
         font-size: 30px;
@@ -110,7 +108,7 @@
     }
     
     .button-stop {
-        background-color: #f56f42;
+        background-color: #eb5d5d;
     }
     
     .repetition-title {
@@ -174,7 +172,6 @@
     }
     
     .button {
-        background-color: #6fc985;
         border-color: white;
         margin: 10px;
         font-size: 30px;
@@ -188,7 +185,7 @@
     }
     
     .button-stop {
-        background-color: #f56f42;
+        background-color: #eb5d5d;
     }
     
     .repetition-title {
@@ -253,7 +250,6 @@
 }
 
 .button {
-    background-color: #6fc985;
     border-color: white;
     margin: 10px;
     font-size: 30px;
@@ -267,7 +263,7 @@
 }
 
 .button-stop {
-    background-color: #f56f42;
+    background-color: #eb5d5d;
 }
 
 .repetition-title {
@@ -319,7 +315,7 @@
 }
 
 .button-stop:hover {
-    background-color: #f5835e!important;
+    background-color: #f67373!important;
     border-color: white!important;
 }
 
@@ -329,6 +325,6 @@
 }
 
 .button-stop:active {
-    background-color: #f6906e!important;
+    background-color: #f67373!important;
     border-color: white!important;
 }
