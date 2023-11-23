@@ -4,8 +4,6 @@ import meditation2 from '../../../../assets/svg/meditation2.svg';
 import meditation3 from '../../../../assets/svg/meditation3.svg';
 import meditation4 from '../../../../assets/svg/meditation4.svg';
 import meditation5 from '../../../../assets/svg/meditation5.svg';
-import LandingSectionRight from '../landing-section/LandingSectionRight';
-import LandingSectionLeft from '../landing-section/LandingSectionLeft';
 import '../information/information.css';
 import { Image } from 'react-bootstrap';
 
