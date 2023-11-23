@@ -10,5 +10,15 @@
 }
 
 .nav-link{
-    font-size: 25px;
+    font-size: 20px !important;
+}
+.nav-link:hover{
+    font-size: 21px !important;
+    color:#178eeb!important;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin-left: 30px;
 }

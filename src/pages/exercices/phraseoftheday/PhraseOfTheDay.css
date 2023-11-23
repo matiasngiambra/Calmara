@@ -1,18 +1,66 @@
+@media (max-width: 431px) {
 
-.phrase-button-container{
-    font-family: 'Montserrat', cursive;
-    font-size: 20px;
-    color: #75CCFF;
-    margin:40px;
+    .phrase-button-container {
+        
+        font-family: 'Montserrat', cursive;
+        font-size: 20px;
+        color: #75CCFF;
+        margin: 40px;
+    }
+
+    .phrase-text {
+        font-family: 'Montserrat', cursive;
+        font-size: 40px;
+        color: #75CCFF;
+    }
+
+    .phrase-autor {
+        font-family: 'Montserrat', cursive;
+        font-size: 30px;
+    }
+
 }
 
-.phrase-text{
-    font-family: 'Montserrat', cursive;
-    font-size: 60px;
-    color: #75CCFF;
+@media (min-width: 432px) and (max-width: 1024px) {
+
+    .phrase-button-container {
+        font-family: 'Montserrat', cursive;
+        font-size: 20px;
+        color: #75CCFF;
+        margin: 40px;
+    }
+
+    .phrase-text {
+        font-family: 'Montserrat', cursive;
+        font-size: 50px;
+        color: #75CCFF;
+    }
+
+    .phrase-autor {
+        font-family: 'Montserrat', cursive;
+        font-size: 30px;
+    }
+
 }
 
-.phrase-autor{
-    font-family: 'Montserrat', cursive;
-    font-size: 30px;
+@media (min-width: 1025px) {
+
+    .phrase-button-container {
+        font-family: 'Montserrat', cursive;
+        font-size: 20px;
+        color: #75CCFF;
+        margin: 40px;
+    }
+
+    .phrase-text {
+        font-family: 'Montserrat', cursive;
+        font-size: 70px;
+        color: #75CCFF;
+    }
+
+    .phrase-autor {
+        font-family: 'Montserrat', cursive;
+        font-size: 30px;
+    }
+
 }

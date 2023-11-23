@@ -1,0 +1,133 @@
+@media (max-width: 431px) {
+    .title-secundary-information {
+        margin: 25px;
+        font-family: 'Sacramento', cursive;
+        line-height: 0.8 !important;
+        font-size: 17vw;
+        color: #75CCFF;
+        z-index: 3;
+    }
+
+    .contenedor-info {
+        width: 100%;
+    }
+
+    .info-card {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-card-reverse {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infotext {
+        background-color: #61a9da;
+        color: white;
+        padding: 5vw;
+        font-family: 'Montserrat', sans-serif;
+        border-color: #61a9da;
+        border-radius: 10px;
+        font-size: 1.7vh;
+        width: 80%;
+        margin: 10px;
+    }
+
+    .info-image {
+        width: 80%;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 432px) and (max-width: 1024px) {
+    .title-secundary-information {
+        margin: 20px;
+        font-family: 'Sacramento', cursive;
+        line-height: 1 !important;
+        font-size: 12vw;
+        color: #75CCFF;
+        z-index: 3;
+    }
+
+    .contenedor-info {
+        width: 100%;
+    }
+
+    .info-card {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-card-reverse {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infotext {
+        background-color: #61a9da;
+        color: white;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        border-color: #61a9da;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        width: 80%;
+        margin: 10px;
+    }
+
+    .info-image {
+        width: 70%;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .title-secundary-information {
+        margin: 20px;
+        font-family: 'Sacramento', cursive;
+        line-height: 0.8 !important;
+        font-size: 120px;
+        color: #75CCFF;
+        z-index: 3;
+    }
+    
+    .contenedor-info {
+        width: 100%;
+    }
+
+    .info-card {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .info-card-reverse{
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .infotext {
+        background-color: #61a9da;
+        color: white;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        border-color: #61a9da;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 50%;
+        margin: 10px;
+    }
+
+    .info-image {
+        width: 50%;
+        margin: 10px;
+    }
+}

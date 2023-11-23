@@ -1,4 +1,4 @@
-@media (max-width: 400px) {
+@media (max-width: 431px) {
   .circle1 {
     background-color: #B6E2FF;
     width: 400px;
@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 432px) and (max-width: 800px) {
   .circle1 {
     background-color: #B6E2FF;
     width: 300px;

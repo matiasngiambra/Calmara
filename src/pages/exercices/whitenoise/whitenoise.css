@@ -1,4 +1,4 @@
-@media (max-width: 400px) {
+@media (max-width: 431px) {
     .whitenoisecontainer {
         margin-top: 70px;
         height: 100%;
@@ -22,7 +22,8 @@
     .title {
         font-family: 'Sacramento', cursive;
         line-height: 0.8 !important;
-        font-size: 75px;
+        font-size: 105px;
+        text-align: center;
         color: #75CCFF;
         z-index: 3;
     }
@@ -38,7 +39,7 @@
     }
 }
 
-@media (min-width: 400px) and (max-width: 1000px) {
+@media (min-width: 432px) and (max-width: 1000px) {
     .whitenoisecontainer {
         height: 100%;
         display: flex;
@@ -98,7 +99,7 @@
     .title {
         font-family: 'Sacramento', cursive;
         line-height: 0.8 !important;
-        font-size: 140px;
+        font-size: 170px;
         color: #75CCFF;
         z-index: 3;
     }

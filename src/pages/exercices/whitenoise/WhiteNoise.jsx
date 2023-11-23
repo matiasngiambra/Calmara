@@ -12,11 +12,11 @@ const WhiteNoise = () => {
     document.title = "White Noise - Cálmara"
 
     const audioRefs = [
-        { ref: useRef(null), name: 'RainFallMedium.mp3', originalName: 'Rain' },
-        { ref: useRef(null), name: 'Calm-waves.mp3', originalName: 'Ocean' },
-        { ref: useRef(null), name: 'Campfire-crackling-fireplace.mp3', originalName: 'Bonefire' },
-        { ref: useRef(null), name: 'Evening-birds-singing.mp3', originalName: 'Birds' },
-        { ref: useRef(null), name: 'Forest-ambience.mp3', originalName: 'Forest' },
+        { ref: useRef(null), name: 'RainFallMedium.mp3', originalName: 'Rain', spanishName: 'Lluvia'  },
+        { ref: useRef(null), name: 'Calm-waves.mp3', originalName: 'Ocean' , spanishName: 'Océano'},
+        { ref: useRef(null), name: 'Campfire-crackling-fireplace.mp3', originalName: 'Bonefire', spanishName: 'Fogata' },
+        { ref: useRef(null), name: 'Evening-birds-singing.mp3', originalName: 'Birds', spanishName: 'Aves' },
+        { ref: useRef(null), name: 'Forest-ambience.mp3', originalName: 'Forest', spanishName: 'Bosque' },
     ];
 
     const [isPlaying, setIsPlaying] = useState(Array(audioRefs.length).fill(false));
@@ -41,7 +41,7 @@ const WhiteNoise = () => {
             <Nav isSecondary={true} />
             <CircleLayout />
             <Container className="whitenoisecontainer">
-                <h1 className='title'>White Noise</h1>
+                <h1 className='title'>Ruido Blanco</h1>
                 <h5 className='subtitle'>
                     ¿Estás buscando un espacio de calma y relajación? Has llegado al lugar indicado.
                     Te invitamos a sumergirte en un mundo de sonidos que te transportarán a un estado de serenidad incomparable.
@@ -50,9 +50,9 @@ const WhiteNoise = () => {
                     ¡Explora nuestro catálogo ahora y comienza tu viaje hacia la serenidad hoy mismo!
                 </h5>
                 <div className='container-icons'>
-                    {audioRefs.map(({ ref, name, originalName }, index) => (
+                    {audioRefs.map(({ ref, name, originalName, spanishName }, index) => (
                         <div key={index} onClick={() => handleDivClick(index)} style={{ cursor: 'pointer' }}>
-                            <SoundBoxComponent title={originalName} logo={originalName} ></SoundBoxComponent>
+                            <SoundBoxComponent title={spanishName} logo={originalName} ></SoundBoxComponent>
                         </div>
                     ))}
                     {audioRefs.map(({ ref, name }, index) => (

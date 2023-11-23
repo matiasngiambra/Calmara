@@ -4,8 +4,8 @@ import '../interactive/Interactive.css'
 
 const Interactive = () => {
   return (
-    <div className='section' id='interactivesection'>
-      <div className='title-secundary'>Interactivo</div>
+    <div className='section-interactive' id='interactivesection'>
+      <div className='title-secundary-interactive'>Interactivo</div>
       <div className='container-interactive'>
         <a href='/exercices/breath'>
           <Button className='button-interactive' variant="info">
