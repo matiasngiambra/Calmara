@@ -12,22 +12,18 @@ const FooterComponent = () => {
                             Copyright &copy; 2023 Cálmara. Todos los derechos reservados.
                             <br />
                             <small>
-                                Alumnos: <a className='link-reference-footer' href='https://www.linkedin.com/in/matias-giambra/'>Giambra Matias</a>,
-                                <a  className='link-reference-footer' href='https://www.linkedin.com/in/nahuel-palacios-salguero/'> Palacios Nahuel</a>
+                                Alumnos: <small> </small>
+                                <a className='link-reference-footer' href='https://www.linkedin.com/in/matias-giambra/'>Giambra Matias</a>
+                                <small> y </small> <a className='link-reference-footer' href='https://www.linkedin.com/in/nahuel-palacios-salguero/'>Palacios Nahuel</a>
                             </small>
                         </p>
                     </Col>
                     <Col sm={6}>
                         <ul className="list-inline">
                             <li>
-                                <a className='footer-link' href="#">Inicio</a>
+                                <a className='footer-link' href="#">Volver Arriba</a>
                             </li>
-                            <li>
-                                <a className='footer-link' href="#">Sobre nosotros</a>
-                            </li>
-                            <li>
-                                <a className='footer-link' href="#">Contacto</a>
-                            </li>
+                           
                         </ul>
                     </Col>
                 </Row>

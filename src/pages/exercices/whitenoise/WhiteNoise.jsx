@@ -40,7 +40,7 @@ const WhiteNoise = () => {
         <>
             <Nav isSecondary={true} />
             <CircleLayout />
-            <Container className="whitenoisecontainer">
+            <Container className=" vh-100 d-flex whitenoisecontainer">
                 <h1 className='title'>Ruido Blanco</h1>
                 <h5 className='subtitle'>
                     ¿Estás buscando un espacio de calma y relajación? Has llegado al lugar indicado.

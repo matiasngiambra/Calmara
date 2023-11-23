@@ -14,12 +14,12 @@ const Interactive = () => {
         </a>
         <a href='/exercices/whitenoise'>
           <Button className='button-interactive' variant="info">
-            Sonidos ambiente
+            Ruido Blanco
           </Button>
         </a>
         <a href='/exercices/phraseoftheday'>
           <Button className='button-interactive' variant="info">
-            Frase del día
+            Frases motivacionales
           </Button>
         </a>
       </div>

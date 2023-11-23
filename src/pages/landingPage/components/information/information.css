@@ -104,6 +104,7 @@
     .info-card {
         display: flex;
         width: 100%;
+        padding: 30px;
         flex-direction: row;
         align-items: center;
     }
@@ -121,7 +122,7 @@
         font-family: 'Montserrat', sans-serif;
         border-color: #61a9da;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 20px;
         width: 50%;
         margin: 10px;
     }

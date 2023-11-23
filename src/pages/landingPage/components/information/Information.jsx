@@ -16,10 +16,10 @@ const Information = () => {
       <div className='contenedor-info'>
         <div className='info-card'>
           <p className='infotext'>
-
-            El estrés y la ansiedad son fenómenos comunes en la vida moderna, afectando la salud física y mental.
-            El estrés crónico puede desencadenar diversos problemas, desde trastornos del sueño hasta enfermedades cardiovasculares.
-            La ansiedad, por otro lado, se manifiesta en preocupaciones excesivas y miedo constante. Ambos trastornos a menudo coexisten,
+            Imagina que tu mente es como una montaña rusa de emociones. El <b><u>estrés</u></b> es como cuando la montaña rusa sube muy, muy alto, y sientes
+            que todo va muy rápido y se vuelve abrumador. Es como tener demasiadas cosas que hacer y sentirte un poco como "<i>¡Ah! ¡Esto es demasiado!</i>".
+            La <b><u>ansiedad</u></b>, por otro lado, es como cuando te preocupas mucho por algo que podría pasar, incluso si no es muy probable.
+            Es como tener un amigo miedoso en tu cabeza que dice: "<i>¿Y si algo malo sucede?</i> " y hace que te sientas nervioso,
             intensificando sus efectos adversos.
           </p>
           <div className='info-image'>
@@ -29,10 +29,10 @@ const Information = () => {
 
         <div className='info-card-reverse'>
           <p className='infotext'>
-            El estrés y la ansiedad son respuestas naturales del cuerpo ante situaciones desafiantes,
-            pero el exceso de ambos puede tener efectos negativos en la salud mental.
-            La respiración controlada es una técnica eficaz para reducir el estrés, ya que ayuda a calmar el sistema nervioso.
-            Combinarla con sonidos ambiente relajantes, como la música suave o el murmullo del agua, proporciona un entorno propicio para la relajación.
+            Entonces, el estrés es como estar ocupado y abrumado, y la ansiedad es cuando te preocupas mucho por lo que podría pasar. Ambas son <u>respuestas
+              naturales del cuerpo ante situaciones desafiantes</u>, pero exceso de ambos puede tener efectos negativos en la salud fisica y mental.
+            Pero recuerda, <b>¡eres el piloto de tu montaña rusa y puedes aprender a
+              controlarla para que sea divertida en lugar de aterradora!</b> 
           </p>
           <div className='info-image'>
             <Image src={meditation2} fluid rounded />
@@ -41,9 +41,10 @@ const Information = () => {
 
         <div className='info-card'>
           <p className='infotext'>
-            La lectura de frases motivadoras también puede contrarrestar la ansiedad al cambiar el enfoque mental y fomentar pensamientos positivos,
-            brindando apoyo emocional durante momentos difíciles. Estas prácticas simples pueden ser herramientas efectivas para gestionar el estrés
-            y la ansiedad en la vida cotidiana.
+            La <b><i>respiración guiada</i></b> es una técnica eficaz para reducir el estrés, ya que ayuda a calmar el sistema nervioso.
+            Combinarla con <b><i>ruido blanco</i></b>, como una noche de lluvia o el murmullo del agua del océano,
+            o la <b><i>lectura de frases motivadoras</i></b> proporcionan un entorno propicio para la relajación y también sirven
+            para contrarrestar la ansiedad al cambiar el enfoque mental y fomentar pensamientos positivos.
           </p>
           <div className='info-image'>
             <Image src={meditation5} fluid rounded />

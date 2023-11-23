@@ -311,20 +311,20 @@
 
 .button-start:hover {
     background-color: #88df9e!important;
-    border-color: white!important;
+    border-color: #88df9e!important;
 }
 
 .button-stop:hover {
     background-color: #f67373!important;
-    border-color: white!important;
+    border-color: #f67373!important;
 }
 
 .button-start:active {
     background-color: #6fc985!important;
-    border-color: white!important;
+    border-color: #6fc985!important;
 }
 
 .button-stop:active {
     background-color: #f67373!important;
-    border-color: white!important;
+    border-color: #f67373!important;
 }

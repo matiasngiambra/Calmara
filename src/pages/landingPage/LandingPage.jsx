@@ -2,7 +2,7 @@ import React from 'react'
 import CircleLayout from '../../layout/components/CircleLayout'
 import Home from './components/home/Home'
 import Nav from '../../layout/components/nav/Nav'
-import { Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import '../landingPage/LandingPage.css'
 import Information from './components/information/Information'
 import Interactive from './components/interactive/Interactive'
@@ -15,15 +15,15 @@ const LandingPage = () => {
       <Nav />
       <CircleLayout />
       <Container>
-        <row className='rowhome'>
+        <div className='rowhome'>
           <Home />
-        </row>
-        <row className='rowinformation'>
+        </div>
+        <div className='rowinformation'>
           <Information />
-        </row>
-        <row className='rowinteractive'>
+        </div>
+        <div className='rowinteractive'>
         <Interactive />
-        </row>
+        </div>
       </Container>
       <FooterComponent></FooterComponent>
     </>

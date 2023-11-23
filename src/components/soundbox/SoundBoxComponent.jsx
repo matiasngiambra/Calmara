@@ -27,7 +27,7 @@ const SoundBoxComponent = ({ title, logo }) => {
 
   return (
     <div className='box' >
-      <h2>{title}</h2>
+      <h2 className='title-box'>{title}</h2>
       {selectLogo(logo)}
     </div>
   )

@@ -1,11 +1,39 @@
-@media (max-width: 431px) {
+@media (max-width: 250px) {
     .box{
         display: flex;
         background-color: #75ccff;
         color: white;
         align-self: center;
-        width: 100px;
-        height: 150px;
+        width: 55px;
+        height: 80px;
+        border-radius: 20px;
+        margin: 5px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .title-box{
+        font-size: 12px;
+    }
+    .box:hover{
+        background-color: #57b8f1;
+        cursor: pointer;
+    }
+    
+    .logo{
+        height: 25px;
+    }
+}
+
+@media (min-width: 251px) and (max-width: 431px) {
+    .box{
+        display: flex;
+        background-color: #75ccff;
+        color: white;
+        align-self: center;
+        width: 90px;
+        height: 120px;
         border-radius: 20px;
         margin: 10px;
         flex-direction: column;
@@ -23,7 +51,32 @@
     }
 }
 
-@media (min-width: 432px) and (max-width: 1000px) {
+@media (min-width: 432px) and (max-width: 800px) {
+    .box{
+        display: flex;
+        background-color: #75ccff;
+        color: white;
+        align-self: center;
+        min-width: 130px;
+        height: 140px;
+        border-radius: 20px;
+        margin: 15px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .box:hover{
+        background-color: #57b8f1;
+        cursor: pointer;
+    }
+    
+    .logo{
+        height: 65px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 999px) {
     .box{
         display: flex;
         background-color: #75ccff;
