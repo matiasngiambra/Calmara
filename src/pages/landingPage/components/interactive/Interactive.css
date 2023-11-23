@@ -125,7 +125,12 @@
   }
 
 
-  
+.button-interactive:active{
+    background-color:#87c1e8 !important;
+    color:white !important;
+    border-color: white!important;
+}
+
 .button-interactive:hover{
     background-color:#87c1e8;
     color:white;

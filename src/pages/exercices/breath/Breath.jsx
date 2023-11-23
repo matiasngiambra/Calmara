@@ -69,32 +69,39 @@ const Breath = () => {
       <CircleLayout />
       <Navclass isSecondary={true} />
       <Container className="vh-100 container-breath">
-        <Row className="justify-content-center">
-          <Col xs={12} md={6} className="text-center">
-            <Button onClick={startMeditation} variant="primary" className="m-2">
+        <div className='conteiner-breath-app'>
+
+
+
+
+          <div className='breath-container'>
+            <p className='repetition-title'>Repeticion <span className='repetition-number'>{repetition}/3</span></p>
+            <p className='breath-title'>{inhale ? 'Inhalar' : 'Exhalar'}</p>
+            <div
+              style={{
+                width: `${calculateBubbleSize()}px`,
+                height: `${calculateBubbleSize()}px`,
+                borderRadius: '50%',
+                backgroundColor: '#3498db', // Azul primario de la paleta de colores
+                transition: 'all 0.5s ease-out',
+                margin: '30px auto',
+              }}
+            />
+            <p className='breath-subtitle'>{seconds}</p>
+          </div>
+
+          <div className='conteiner-breath-buttons'>
+
+            <Button onClick={startMeditation} variant="primary" className="button button-start">
               Empezar
             </Button>
-            <Button onClick={stopMeditation} variant="danger" className="m-2">
+            <Button onClick={stopMeditation} variant="danger" className="button button-stop">
               Parar
             </Button>
-            <br />
-            <div className='breath-container'>
-              <p className='repetition-title'>Repeticion <span className='repetition-number'>{repetition}/3</span></p>
-              <p className='breath-title'>{inhale ? 'Inhalar' : 'Exhalar'}</p>
-              <div
-                style={{
-                  width: `${calculateBubbleSize()}px`,
-                  height: `${calculateBubbleSize()}px`,
-                  borderRadius: '50%',
-                  backgroundColor: '#3498db', // Azul primario de la paleta de colores
-                  transition: 'all 0.5s ease-out',
-                  margin: '30px auto',
-                }}
-              />
-              <p className='breath-subtitle'>{seconds}</p>
-            </div>
-          </Col>
-        </Row>
+          </div>
+
+        </div>
+
       </Container>
       <FooterComponent />
     </>

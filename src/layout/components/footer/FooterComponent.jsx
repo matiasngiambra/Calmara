@@ -12,8 +12,8 @@ const FooterComponent = () => {
                             Copyright &copy; 2023 Cálmara. Todos los derechos reservados.
                             <br />
                             <small>
-                                Alumnos: <a href='https://www.linkedin.com/in/matias-giambra/'>Giambra Matias</a>,
-                                <a href='https://www.linkedin.com/in/nahuel-palacios-salguero/'> Palacios Nahuel</a>
+                                Alumnos: <a className='link-reference-footer' href='https://www.linkedin.com/in/matias-giambra/'>Giambra Matias</a>,
+                                <a  className='link-reference-footer' href='https://www.linkedin.com/in/nahuel-palacios-salguero/'> Palacios Nahuel</a>
                             </small>
                         </p>
                     </Col>

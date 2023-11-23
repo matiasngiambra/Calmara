@@ -1,24 +1,296 @@
-.repetition-title{
+@media (max-width: 431px) {
+
+
+    .conteiner-breath-app {
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    .conteiner-breath-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .button {
+        background-color: #6fc985;
+        border-color: white;
+        margin: 10px;
+        font-size: 30px;
+        padding: 10px;
+        width: 200px;
+        border-radius: 30px;
+    }
+    
+    .button-start {
+        background-color: #6fc985;
+    }
+    
+    .button-stop {
+        background-color: #f56f42;
+    }
+    
+    .repetition-title {
+        font-family: 'Montserrat', cursive;
+        line-height: 0.8 !important;
+        font-size: 20px;
+        color: #75CCFF;
+        z-index: 3;
+        margin: 20px;
+    }
+    
+    .repetition-number {
+        font-family: 'Montserrat', cursive;
+        font-size: 20px;
+        color: #75CCFF;
+        z-index: 3;
+    }
+    
+    .container-breath {
+        margin-top: 30px;
+    }
+    
+    .breath-title {
+        margin: 20px;
+        font-family: 'Montserrat', cursive;
+        font-size: 30px;
+        color: #3498db;
+        z-index: 3;
+    }
+    
+    .breath-subtitle {
+        margin: 20px;
+        font-family: 'Montserrat', cursive;
+        font-size: 25px;
+        color: #3498db;
+        z-index: 3;
+    }
+    
+    .breath-container {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 432px) and (max-width: 1024px) {
+
+
+
+    .conteiner-breath-app {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    .conteiner-breath-buttons {
+        display: flex;
+    }
+    
+    .button {
+        background-color: #6fc985;
+        border-color: white;
+        margin: 10px;
+        font-size: 30px;
+        padding: 10px;
+        width: 200px;
+        border-radius: 30px;
+    }
+    
+    .button-start {
+        background-color: #6fc985;
+    }
+    
+    .button-stop {
+        background-color: #f56f42;
+    }
+    
+    .repetition-title {
+        font-family: 'Montserrat', cursive;
+        line-height: 0.8 !important;
+        font-size: 20px;
+        color: #75CCFF;
+        z-index: 3;
+        margin: 20px;
+    }
+    
+    .repetition-number {
+        font-family: 'Montserrat', cursive;
+        font-size: 20px;
+        color: #75CCFF;
+        z-index: 3;
+    }
+    
+    .container-breath {
+        margin-top: 30px;
+    }
+    
+    .breath-title {
+        margin: 20px;
+        font-family: 'Montserrat', cursive;
+        font-size: 30px;
+        color: #3498db;
+        z-index: 3;
+    }
+    
+    .breath-subtitle {
+        margin: 20px;
+        font-family: 'Montserrat', cursive;
+        font-size: 25px;
+        color: #3498db;
+        z-index: 3;
+    }
+    
+    .breath-container {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+
+    .conteiner-breath-app {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    .conteiner-breath-buttons {
+        display: flex;
+    }
+    
+    .button {
+        background-color: #6fc985;
+        border-color: white;
+        margin: 10px;
+        font-size: 30px;
+        padding: 10px;
+        width: 200px;
+        border-radius: 30px;
+    }
+    
+    .button-start {
+        background-color: #6fc985;
+    }
+    
+    .button-stop {
+        background-color: #f56f42;
+    }
+    
+    .repetition-title {
+        font-family: 'Montserrat', cursive;
+        line-height: 0.8 !important;
+        font-size: 20px;
+        color: #75CCFF;
+        z-index: 3;
+        margin: 20px;
+    }
+    
+    .repetition-number {
+        font-family: 'Montserrat', cursive;
+        font-size: 20px;
+        color: #75CCFF;
+        z-index: 3;
+    }
+    
+    .container-breath {
+        margin-top: 30px;
+    }
+    
+    .breath-title {
+        margin: 20px;
+        font-family: 'Montserrat', cursive;
+        font-size: 30px;
+        color: #3498db;
+        z-index: 3;
+    }
+    
+    .breath-subtitle {
+        margin: 20px;
+        font-family: 'Montserrat', cursive;
+        font-size: 25px;
+        color: #3498db;
+        z-index: 3;
+    }
+    
+    .breath-container {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+.conteiner-breath-app {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.conteiner-breath-buttons {
+    display: flex;
+}
+
+.button {
+    background-color: #6fc985;
+    border-color: white;
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.button-start {
+    background-color: #6fc985;
+}
+
+.button-stop {
+    background-color: #f56f42;
+}
+
+.repetition-title {
     font-family: 'Montserrat', cursive;
     line-height: 0.8 !important;
     font-size: 20px;
     color: #75CCFF;
     z-index: 3;
-    margin:20px;
+    margin: 20px;
 }
 
-.repetition-number{
+.repetition-number {
     font-family: 'Montserrat', cursive;
     font-size: 20px;
     color: #75CCFF;
     z-index: 3;
 }
 
-.container-breath{
+.container-breath {
     margin-top: 30px;
 }
 
-.breath-title{
+.breath-title {
     margin: 20px;
     font-family: 'Montserrat', cursive;
     font-size: 30px;
@@ -26,7 +298,7 @@
     z-index: 3;
 }
 
-.breath-subtitle{
+.breath-subtitle {
     margin: 20px;
     font-family: 'Montserrat', cursive;
     font-size: 25px;
@@ -34,6 +306,29 @@
     z-index: 3;
 }
 
-.breath-container{
+.breath-container {
     margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.button-start:hover {
+    background-color: #88df9e!important;
+    border-color: white!important;
+}
+
+.button-stop:hover {
+    background-color: #f5835e!important;
+    border-color: white!important;
+}
+
+.button-start:active {
+    background-color: #6fc985!important;
+    border-color: white!important;
+}
+
+.button-stop:active {
+    background-color: #f6906e!important;
+    border-color: white!important;
 }
