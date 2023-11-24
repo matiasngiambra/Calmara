@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useNavigate} from "react-router-dom";
 import BackButton from '../../../components/backbutton/BackButton';
+import logo from '../../../assets/images/Calmara-logo.png'
 
 
 const Navclass = ( {isSecondary} ) => {
@@ -20,7 +21,7 @@ const Navclass = ( {isSecondary} ) => {
     return (
         <>
             <Navbar className="navbar bg-body-tertiary">
-                <a className="navbar-brand" href="#" onClick={() => navigate("/")}> <img style={{ marginLeft: '30px', height: '30px' }} src="../src/assets/images/Calmara-logo.png" alt="" /> </a>
+                <a className="navbar-brand" href="#" onClick={() => navigate("/")}> <img style={{ marginLeft: '30px', height: '30px' }} src={logo} alt="" /> </a>
                     <Navbar.Toggle  />
                     {!isSecondary ? 
                     <Navbar.Collapse id="responsive-navbar-nav">
