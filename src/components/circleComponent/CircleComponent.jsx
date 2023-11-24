@@ -1,5 +1,5 @@
 import React from 'react';
-import '../circleComponent/circleComponent.css'; 
+import '../circleComponent/CircleComponent.css'; 
 
 const CircleComponent = (props) => {
   
